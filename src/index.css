@@ -99,6 +99,9 @@ i {
 #display-products .card {
   margin: auto;
 }
+#all-products{
+  padding: 20px 55px; margin: auto 0px;
+}
 #all-products .card {
   width: 13rem; height: 18rem; margin: auto;
 }
@@ -181,11 +184,11 @@ footer h5 , footer i:hover{
   margin: 20px auto;
 }
 #display-category .container{
-  display: grid; grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px; column-gap: 7px;
+  display: grid; grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px; column-gap: 10px;
 }
 #card-category{
-  width: 9rem; height: 16rem; margin: auto;
+  width: 14rem; height: 16rem; margin: auto;
 }
 #bottom-home-slider img{
   width: 100%; height: 35vh;
