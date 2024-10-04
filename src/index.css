@@ -182,10 +182,10 @@ footer h5 , footer i:hover{
 }
 #display-category .container{
   display: grid; grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px; column-gap: 10px;
+  row-gap: 20px; column-gap: 7px;
 }
 #card-category{
-  width: 11rem; height: 16rem; margin: auto;
+  width: 9rem; height: 16rem; margin: auto;
 }
 #bottom-home-slider img{
   width: 100%; height: 35vh;
