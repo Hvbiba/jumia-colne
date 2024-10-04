@@ -65,7 +65,7 @@ export default function Products() {
             {isLoad ? (
                 <LoadingIcon />
             ) : (
-                <div className="container py-3" id="all-products">
+                <div className="container" id="all-products">
                     <Slider {...settings}>
                         {getProducts.map((product) => (
                             <div className="px-1" key={product.id} onClick={()=>toProduct(product.id)}>
