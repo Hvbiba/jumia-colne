@@ -3,15 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ProductContextProvider from './Context/ProductContext'; 
+import CategoryContextProvider from './Context/CategoryContext'; 
+import CartContextProvider from './Context/CartContext';
+import SearchContextProvider from './Context/SearchContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.addEventListener("DOMContentLoaded", function(){
+  const images = document.querySelectorAll('img');
+  images.forEach((img) => {
+    img.classList.add("lazy");
+  });
+})
 root.render(
   <React.StrictMode>
-    <App />
+    <ProductContextProvider>
+      <CategoryContextProvider>
+        <CartContextProvider>
+          <SearchContextProvider>
+              <App />
+          </SearchContextProvider>
+        </CartContextProvider>
+      </CategoryContextProvider>
+    </ProductContextProvider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
